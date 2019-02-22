@@ -1,0 +1,45 @@
+html, body {
+  height: 100;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  position: relative;
+  width: 730px;
+  height: 780px;
+  background: url(../img/cface.png);
+}
+.clock:after {
+  position: absolute;
+  content: ' ';
+  background: rgb(0, 0, 0);
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(490%) translateY(710%);
+  border-radius: 50%;
+
+}
+.hr {
+  position: absolute;
+  top: 250px;
+  right: 144px;
+}
+.min {
+  position: absolute;
+  top: 190px;
+  left: 366px;
+}
+.sec {
+  position: absolute;
+  top: 265px;
+  left: 433px;
+
+}
