@@ -8,16 +8,16 @@ function initClock()  {
   var minute = date.getMinutes();
   var second = date.getSeconds();
 
-  var hourDeg = hour * 30;
-  var minuteDeg = 6;
-  var secondDeg = 6;
+  var hourDeg =  (hour * 30) + (0.5 * minute); // every hour, 30 deg. 30 / 60
+  var minuteDeg = (minute * 6) + (0.1 * second); // every minute, 6 deg. 6 / 60
+  var secondDeg = second * 6; // 360 / 60
 
   hourHand.style.transform = 'rotate(' + hourDeg + 'deg)';
-  minuteHand.style.transform = 'rotate(' + hourDeg + 'deg)';
-  secondHand.style.transform = 'rotate(' + hourDeg + 'deg)';
+  minuteHand.style.transform = 'rotate(' + minuteDeg + 'deg)';
+  secondHand.style.transform = 'rotate(' + secondDeg + 'deg)';
 
 
   setTimeout(initClock, 1000);
 };
 
-initClock
+initClock();

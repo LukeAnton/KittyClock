@@ -1,7 +1,28 @@
 html, body {
   height: 100;
-
+  background-color: rgb(46, 46, 46);
 }
+h1{
+  color: rgba(121, 121, 121, 0.9);
+  text-align: center;
+  font-family: 'Ruge Boogie', cursive;
+  font-size: 60px;
+}
+
+h2{
+  color: rgba(200, 200, 200, 0.9);
+  text-align: center;
+  font-family: 'Ruge Boogie', cursive;
+  letter-spacing: 10px;
+}
+
+.foot {.foot
+  color: rgba(0, 0, 0, 0.88);
+  letter-spacing: 80px;
+  font-size: 40px;
+  font-family: 'Ruge Boogie', cursive;
+}
+
 
 .container {
   display: flex;
@@ -10,36 +31,29 @@ html, body {
 }
 
 .clock {
-  position: relative;
-  width: 730px;
-  height: 780px;
-  background: url(../img/cface.png);
-}
-.clock:after {
   position: absolute;
-  content: ' ';
-  background: rgb(0, 0, 0);
-  width: 15px;
-  height: 15px;
-  top: 50%;
-  left: 50%;
-  transform: translateX(490%) translateY(710%);
-  border-radius: 50%;
+  width: 750px;
+  height: 770px;
+  background: url(../img/cface.png);
+  margin: 150px -60px;
+}
 
+.min {
+  position: absolute;
+  top: 178px;
+  left: 366px;
+  transform-origin: 34% 79%;
 }
 .hr {
   position: absolute;
-  top: 250px;
-  right: 144px;
-}
-.min {
-  position: absolute;
-  top: 190px;
-  left: 366px;
+  top: 248px;
+  left: 302px;
+  transform-origin: 51% 75%;
 }
 .sec {
   position: absolute;
-  top: 265px;
+  top: 263px;
   left: 433px;
+  transform-origin: 50% 69%;
 
 }
